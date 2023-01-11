@@ -1,0 +1,33 @@
+{
+  "name": "@jh-zjz/utils",
+  "version": "1.0.6",
+  "description": "Common utils that are often used, by typescript",
+  "scripts": {
+    "pub": "tsc -d && npm publish",
+    "build": "tsc -d",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "utils"
+  ],
+  "files": [
+    "package.json",
+    "common",
+    "browser",
+    "node"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Jh-tech",
+  "license": "ISC",
+  "private": false,
+  "dependencies": {
+    "chalk": "4",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "",
+    "rootDir": "src",
+    "declaration": false,
+    "removeComments": true,
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "module": "NodeNext",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@types": ["../types"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts"]
+}
