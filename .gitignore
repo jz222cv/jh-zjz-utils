@@ -56,6 +56,6 @@ profile*
 
 pnpm-lock.yaml
 
-./broswer
-./common
-./node
+/broswer
+/common
+/node
