@@ -55,3 +55,7 @@ profile*
 *flamegraph*
 
 pnpm-lock.yaml
+
+./broswer
+./common
+./node
