@@ -16,7 +16,7 @@ export class Logger {
     const memory = (process.memoryUsage().rss / Math.pow(2, 20)).toFixed(2)
     this.logger[type](`${message}, duration: ${duration} s, ram: ${memory} m`)
   }
-
+ 
   log (message: string, type: Key = 'info') {
     this.base(message, type)
   }
