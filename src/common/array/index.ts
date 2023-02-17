@@ -24,3 +24,49 @@ export function arrayObject<
   })
   return obj
 }
+
+/**
+ * 数组去重
+ */
+export function arrayUnique<T> (arr: T[]) {
+  return Array.from(new Set(arr))
+}
+
+/**
+ * 数组并集
+ */
+export function arrayUnion<T> (...arr: T[][]) {
+  return arr.flat(1)
+}
+
+/**
+ * 数组交集
+ */
+export function arrayIntersect<T extends number | string> (...arr: T[][]) {
+  const map = {} as Record<T, number>
+  arr.forEach(item => {
+    arrayUnique(item).forEach(x => {
+      if (!map[x]) {
+        map[x] = 0
+      }
+      map[x]++
+    })
+  })
+  return getKeys(map).filter(x => map[x] === arr.length)
+}
+
+/**
+ * 数组差集
+ */
+export function arrayDiff<T extends number | string> (...arr: T[][]) {
+  const map = {} as Record<T, number>
+  arr.forEach(item => {
+    arrayUnique(item).forEach(x => {
+      if (!map[x]) {
+        map[x] = 0
+      }
+      map[x]++
+    })
+  })
+  return getKeys(map).filter(x => map[x] === 1)
+}

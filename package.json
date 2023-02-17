@@ -1,6 +1,6 @@
 {
   "name": "@jh-zjz/utils",
-  "version": "1.0.6",
+  "version": "1.0.10",
   "description": "Common utils that are often used, by typescript",
   "scripts": {
     "pub": "tsc -d && npm publish",
