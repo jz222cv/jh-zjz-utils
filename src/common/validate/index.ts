@@ -9,5 +9,5 @@ export function validateMobile (value: string) {
  * 验证邮箱
  */
 export function validateEmail (value: string) {
-  return /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/.test(value)
+  return /^([a-zA-Z0-9\._-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/.test(value)
 }

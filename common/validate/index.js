@@ -6,6 +6,6 @@ function validateMobile(value) {
 }
 exports.validateMobile = validateMobile;
 function validateEmail(value) {
-    return /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/.test(value);
+    return /^([a-zA-Z0-9\._-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/.test(value);
 }
 exports.validateEmail = validateEmail;
